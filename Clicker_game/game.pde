@@ -1,7 +1,5 @@
-int 
-
 void game() {
   background(dungeon);
    
- circle( xpos, ypos, radius); 
+ //circle( xpos, ypos, radius); 
 }

@@ -8,14 +8,15 @@ final int Pause = 2;
 final int Gameover = 3;
 final int menu = 4;
 PImage dungeon;
-PImage pizza;
-
+PImage GTA;
+PFont ka1;
 
 void setup() {
   size( 1200, 800);
   mode = Intro;
   dungeon = loadImage("dangeon.png");
-  pizza = loadImage("image.jpg");
+  GTA = loadImage("GTA.jpg");
+  ka1 = createFont("ka1.ttf", textsize);
 }
 
 void draw() {

@@ -6,12 +6,17 @@ final int textsize2 = 60;
 boolean stop = true;
 boolean gamestart = true;
 
-
 void Intro() {
-  background( pizza);
+  background(GTA);
   textAlign(CENTER);
   textSize(textsize);
-  text(" Pizza clicker", 600, textypos);
+  textFont(ka1);
+  rectMode(CENTER);
+  tint(100, 50);
+  fill(225);
+  rect( 600, textypos - 20, 1200, 70);
+  fill(0);
+  text(" GTAVI", 600, textypos);
   if ( textypos > 400) {
     textypos = textypos  -2;
   }
@@ -20,7 +25,6 @@ void Intro() {
     stop = true;
     gamestart = true;
     textsize = 61;
-
   }
 
   if ( textsize > 60 && textsize < 80 && stop) {
@@ -28,7 +32,30 @@ void Intro() {
     if (textsize > 79) {
       stop = false;
     }
+  }
+  if ( textsize > 60 && textsize < 80 && !stop) {
+    textsize = textsize - 0.3;
+    if (textsize < 61) {
+      stop = true;
+    }
+  }
+  fill(#FFFFFF);
+  text(" GTAVI", 590, textypos);
+  if ( textypos > 400) {
+    textypos = textypos  -2;
+  }
+  if ( textypos <= 400 && textsize == 60) {
+    textypos = 400;
+    stop = true;
+    gamestart = true;
+    textsize = 61;
+  }
 
+  if ( textsize > 60 && textsize < 80 && stop) {
+    textsize = textsize + 0.3;
+    if (textsize > 79) {
+      stop = false;
+    }
   }
   if ( textsize > 60 && textsize < 80 && !stop) {
     textsize = textsize - 0.3;
@@ -42,7 +69,7 @@ void Intro() {
   if ( textypos <= 400) {
     textypos2 = 600;
   }
-  
+
   text("MENU", 900, textypos3);
   if ( textypos <= 400) {
     textypos3 = 600;
