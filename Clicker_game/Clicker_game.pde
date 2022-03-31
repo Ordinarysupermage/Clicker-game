@@ -10,13 +10,17 @@ final int menu = 4;
 PImage dungeon;
 PImage GTA;
 PFont ka1;
+PImage background1;
+PImage gold;
 
 void setup() {
   size( 1200, 800);
-  mode = Intro;
+  mode = game;
   dungeon = loadImage("dangeon.png");
   GTA = loadImage("GTA.jpg");
   ka1 = createFont("ka1.ttf", textsize);
+  background1 = loadImage("background1.jpg");
+  gold = loadImage("Capture1.png");
 }
 
 void draw() {
