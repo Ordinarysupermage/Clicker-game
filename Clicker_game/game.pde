@@ -1,15 +1,19 @@
 void game() {
+
+  //float x = random(0, width);
+
+
   background(0);
-  
+
   imageMode(CORNER);
   if ( theme == theme1) {
     image(dungeon, 0, 0, 1200, 800);
   }
-  
+
   if ( theme == theme2) {
-    image(background1, 0, 0, 1200, 800);
+    image(valorant, 0, 0, 1200, 800);
   }
-  
+
   if ( theme == theme3) {
     image(van, 0, 0, 1200, 800);
   }
@@ -25,6 +29,9 @@ void game() {
   if ( target == emeralds) {
     image( emerald, x, y, w, h);
   }
+
+  x = x + vx;
+  y = y + vy;
 
   //t.draw();
 }

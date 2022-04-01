@@ -156,7 +156,7 @@ void menu() {
     stroke(0);
   }
   rect( 1000, 580, 200, 100);
-  image(background1, 1000, 580, 200, 100);
+  image(valorant, 1000, 580, 200, 100);
   if ( mouseX > 900 && mouseX < 1100 && mouseY > 650 && mouseY < 750) {
     stroke(#FFFFFF);
   } else {

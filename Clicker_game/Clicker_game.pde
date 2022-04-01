@@ -23,7 +23,9 @@ PImage gold;
 PImage diamond;
 PImage emerald;
 PImage van;
+PImage valorant;
 float x, y, w, h;
+float vx, vy;
 
 void setup() {
   size( 1200, 800);
@@ -36,11 +38,14 @@ void setup() {
   diamond = loadImage("diamond.png");
   emerald = loadImage("Emerald.png");
   van = loadImage("van.jpg");
+  valorant = loadImage("valorant.png");
 
   x = width/2;
   y = height/2;
   w = 100;
   h = 100;
+  vx = 10;
+  vy = -10;
 }
 
 void draw() {

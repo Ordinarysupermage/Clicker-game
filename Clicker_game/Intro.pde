@@ -12,7 +12,6 @@ void Intro() {
   textSize(textsize);
   textFont(ka1);
   rectMode(CENTER);
-  tint(100, 50);
   fill(225);
   rect( 600, textypos - 20, 1200, 70);
   fill(0);
@@ -64,14 +63,14 @@ void Intro() {
     }
   }
   
-  textSize(textsize2);
-  text("START", 300, textypos2);
-  if ( textypos <= 400) {
-    textypos2 = 600;
-  }
+  //textSize(textsize2);
+  //text("START", 300, textypos2);
+  //if ( textypos <= 400) {
+  //  textypos2 = 600;
+  //}
 
-  text("MENU", 900, textypos3);
-  if ( textypos <= 400) {
+  text("MENU", 600, textypos3);
+  if ( textypos <=400) {
     textypos3 = 600;
   }
 }

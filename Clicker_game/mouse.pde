@@ -5,7 +5,7 @@ void mouseReleased() {
     }
   }
   if ( mode == Intro) {
-    if ( mouseX > 820 && mouseX < 980 && mouseY > 560 && mouseY < 640) {
+    if ( mouseX > 520 && mouseX < 680 && mouseY > 560 && mouseY < 640) {
       mode = menu;
     }
   }
